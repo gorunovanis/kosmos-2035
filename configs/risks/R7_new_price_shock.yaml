@@ -1,0 +1,20 @@
+risk_id: R7
+event: Ценовой шок Earth-New ×1,35 в 2038–2039
+cause: изменение торговых ограничений или страховых и логистических затрат нового поставщика (геополитический пример)
+affected_parameter: переменная цена Earth-New 2038–2039
+period: 2038–2039
+probability_basis: "TEAM_ASSUMPTION: диапазон 1,10–1,35 по формуле k = 1 + доля_компонента × (множитель − 1); историческая аналогия подтверждает механизм, не величину"
+owner: оператор (оговорки будущих договоров), финансирующая сторона
+dependencies: свободные слоты Flex; take-or-pay 50 % ограничивает снижение отбора
+scenario_overlay:
+  variable_price_multiplier:
+    Earth-New: {2038: 1.35, 2039: 1.35}
+mitigation:
+  text: отбор Earth-New снижается до минимума take-or-pay (65 т/год), объём сверх минимума переносится на Flex (8,9 против 9,585 млн/т) с уведомлением за 4 месяца; остаток — оплаченный минимум по повышенной цене
+  plan_patch:
+    scale_orders:
+      - {source_id: C, year: 2038, factor: 0.9057}
+      - {source_id: C, year: 2039, factor: 0.5}
+    add_orders:
+      - {source_id: B, volume_t: 6.8, start: "2038-05-03", end: "2038-12-31", role: reactive, decided_on: "2038-01-01", cause: "R7 mitigation: replace Earth-New above-minimum volume"}
+      - {source_id: B, volume_t: 65.0, year: 2039, role: reactive, decided_on: "2038-08-01", cause: "R7 mitigation"}

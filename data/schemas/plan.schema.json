@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SpaceEconomyPolicy/test_oil/schemas/plan.schema.json",
+  "title": "ParticipantPlan",
+  "description": "Portable envelope for participant decisions. The organizer does not prescribe decision values.",
+  "type": "object",
+  "required": ["plan_id", "scenario_id", "decisions"],
+  "properties": {
+    "plan_id": {"type": "string", "minLength": 1},
+    "scenario_id": {"type": "string", "minLength": 1},
+    "decisions": {
+      "type": "object",
+      "required": ["supply_orders", "capacity_reservations", "investments", "inventory_policy"],
+      "properties": {
+        "supply_orders": {"type": "array", "items": {"type": "object"}},
+        "capacity_reservations": {"type": "array", "items": {"type": "object"}},
+        "investments": {"type": "array", "items": {"type": "object"}},
+        "inventory_policy": {"type": "object"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

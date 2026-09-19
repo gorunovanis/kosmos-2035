@@ -1,0 +1,19 @@
+risk_id: R4
+event: Задержка ввода ZBO на 30 месяцев (ввод 01.07.2038 вместо 01.01.2036)
+cause: срок ввода ZBO в кейсе не задан; поставка криокулеров и интеграция (Simonini et al. 2024)
+affected_parameter: режим хранилища до 01.07.2038 базовый (70 т, потери 4,5 %); в стрессе потолок потерь 2 % с 2038
+period: 2036–2038
+probability_basis: "TEAM_ASSUMPTION: диапазон 0/12/24/30 месяцев; 30 — крайняя точка"
+owner: оператор (проект модернизации), финансирующая сторона
+dependencies: потолок потерь в стрессе; ёмкость 70 т ограничивает накопление запаса
+scenario_overlay: {}
+plan_patch:
+  set_investments:
+    - {investment_id: ZBO, decision_date: "2036-01-01", lead_months: 30}
+mitigation:
+  text: при известной задержке оператор компенсирует бóльшие потери дозаказом Flex (уведомление 4 месяца) в 2036–2037, чтобы удержать запас на 1 января; остаточный риск — потолок потерь 2 % в стрессе 2038 до ввода ZBO
+  plan_patch:
+    add_orders:
+      - {source_id: B, volume_t: 8.0, start: "2036-05-03", end: "2036-12-31", role: reactive, decided_on: "2036-01-01", cause: "R4 mitigation: cover extra losses"}
+      - {source_id: B, volume_t: 9.0, year: 2037, role: reactive, decided_on: "2036-09-01", cause: "R4 mitigation"}
+      - {source_id: B, volume_t: 6.0, start: "2038-01-01", end: "2038-06-30", role: reactive, decided_on: "2037-08-01", cause: "R4 mitigation"}

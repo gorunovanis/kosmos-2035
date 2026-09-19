@@ -1,0 +1,18 @@
+rule_id,scenario,period,actual,limit,excess,unit,cause,severity
+SOURCE_NOT_AVAILABLE,MANDATORY_STRESS,2037,130.0,0,130.0,t/year,Earth-New is not available (investment missing or not commissioned),hard
+SOURCE_NOT_AVAILABLE,MANDATORY_STRESS,2038,130.0,0,130.0,t/year,Earth-New is not available (investment missing or not commissioned),hard
+SOURCE_NOT_AVAILABLE,MANDATORY_STRESS,2039,130.0,0,130.0,t/year,Earth-New is not available (investment missing or not commissioned),hard
+SOURCE_NOT_AVAILABLE,MANDATORY_STRESS,2040,130.0,0,130.0,t/year,Earth-New is not available (investment missing or not commissioned),hard
+SOURCE_NOT_AVAILABLE,MANDATORY_STRESS,2037-07-01,32.767123,0,32.767123,t,Earth-New: order on a source that is not available (investment missing),hard
+SOURCE_NOT_AVAILABLE,MANDATORY_STRESS,2038-01-01,71.771394,0,71.771394,t,Earth-New: order on a source that is not available (investment missing),hard
+SOURCE_NOT_AVAILABLE,MANDATORY_STRESS,2039-01-01,130.0,0,130.0,t,Earth-New: order on a source that is not available (investment missing),hard
+SOURCE_NOT_AVAILABLE,MANDATORY_STRESS,2040-01-01,130.0,0,130.0,t,Earth-New: order on a source that is not available (investment missing),hard
+RESERVE_45D,MANDATORY_STRESS,2038-01-01,0.0,35.445205,35.445205,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,MANDATORY_STRESS,2039-01-01,0.0,45.369863,45.369863,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,MANDATORY_STRESS,2040-01-01,0.0,55.294521,55.294521,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2038,0.652939,0.97,0.317061,share,"annual total service below the resilience reference; shortage shown, no automatic recourse",reference
+CRITICAL_SERVICE_REFERENCE,MANDATORY_STRESS,2038,0.960205,0.99,0.029795,share,annual critical service below the resilience reference,reference
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2039,0.543995,0.97,0.426005,share,"annual total service below the resilience reference; shortage shown, no automatic recourse",reference
+CRITICAL_SERVICE_REFERENCE,MANDATORY_STRESS,2039,0.828945,0.99,0.161055,share,annual critical service below the resilience reference,reference
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2040,0.583188,0.97,0.386812,share,"annual total service below the resilience reference; shortage shown, no automatic recourse",reference
+CRITICAL_SERVICE_REFERENCE,MANDATORY_STRESS,2040,0.909774,0.99,0.080226,share,annual critical service below the resilience reference,reference

@@ -1,0 +1,17 @@
+risk_id: R1
+event: Задержка ввода Earth-New до 01.01.2038 (30 месяцев вместо 24)
+cause: подготовка нового поставщика, сертификация, сдвиг первых поставок
+affected_parameter: дата ввода Earth-New; отбор C в 2037 недоступен
+period: 2037
+probability_basis: "диапазон кейса 18–24 мес; 30 мес — дополнительный тест команды (TEAM_ASSUMPTION), вероятность не назначается"
+owner: оператор (контракт), финансирующая сторона (опцион)
+dependencies: R5 (скачок спроса усиливает последствия); связан с резервом мощности Flex
+scenario_overlay: {}
+plan_patch:
+  set_investments:
+    - {investment_id: EARTH_NEW, option_fee_date: "2035-01-15", exercise_date: "2035-07-01", lead_months: 24, commissioning_date: "2038-01-01"}
+mitigation:
+  text: заранее зарезервированный Flex закрывает второе полугодие 2037 реактивным заказом (решение 01.03.2037, поставка с 01.07.2037, лаг 122 дня); остаётся риск выхода за 30 месяцев
+  plan_patch:
+    add_orders:
+      - {source_id: B, volume_t: 34.0, start: "2037-07-01", end: "2037-12-31", role: reactive, decided_on: "2037-03-01", cause: "R1 mitigation: Flex covers the missing Earth-New volume"}

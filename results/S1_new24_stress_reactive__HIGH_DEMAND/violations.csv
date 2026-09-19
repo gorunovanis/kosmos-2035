@@ -1,0 +1,9 @@
+rule_id,scenario,period,actual,limit,excess,unit,cause,severity
+RESERVE_45D,HIGH_DEMAND,2035-01-01,12.4,13.561644,1.161644,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,HIGH_DEMAND,2037-01-01,6.819,25.767123,18.948123,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,HIGH_DEMAND,2038-01-01,8.807948,38.527397,29.71945,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,HIGH_DEMAND,2039-01-01,2.930475,49.315068,46.384594,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,HIGH_DEMAND,2040-01-01,0.0,60.10274,60.10274,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+TOTAL_SERVICE_REFERENCE,HIGH_DEMAND,2037,0.921709,0.97,0.048291,share,"annual total service below the resilience reference; shortage shown, no automatic recourse",reference
+TOTAL_SERVICE_REFERENCE,HIGH_DEMAND,2039,0.952138,0.97,0.017862,share,"annual total service below the resilience reference; shortage shown, no automatic recourse",reference
+TOTAL_SERVICE_REFERENCE,HIGH_DEMAND,2040,0.92,0.97,0.05,share,"annual total service below the resilience reference; shortage shown, no automatic recourse",reference

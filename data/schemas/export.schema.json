@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SpaceEconomyPolicy/test_oil/schemas/export.schema.json",
+  "title": "ResultExportEnvelope",
+  "type": "object",
+  "required": ["scenario_id", "plan_id", "units", "assumptions_reference", "yearly_balance", "source_schedule", "inventory_trace", "financial_breakdown", "constraint_checks", "risk_register"],
+  "properties": {
+    "scenario_id": {"type": "string", "minLength": 1},
+    "plan_id": {"type": "string", "minLength": 1},
+    "units": {"type": "object"},
+    "assumptions_reference": {"type": ["string", "object"]},
+    "yearly_balance": {"type": "array", "items": {"type": "object"}},
+    "source_schedule": {"type": "array", "items": {"type": "object"}},
+    "inventory_trace": {"type": "array", "items": {"type": "object"}},
+    "financial_breakdown": {"type": "array", "items": {"type": "object"}},
+    "constraint_checks": {"type": "array", "items": {"type": "object"}},
+    "risk_register": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,11 @@
+plan,scenario,parameter,criterion,threshold,all_ok_in_range,none_ok_in_range,range
+S1_new24,BASE,Спрос (все годы),план неисполним,1.000024,False,False,0.8..2
+S1_new24,BASE,Спрос (все годы),дефицит > 0,1.034595,False,False,0.8..2
+S1_new24,BASE,Цена Earth-Core,план неисполним,,True,False,0.9..2.16
+S1_new24,BASE,Цена Earth-Core,дефицит > 0,,True,False,0.9..2.16
+S1_new24,BASE,Цена Earth-Flex,план неисполним,,True,False,0.9..2.16
+S1_new24,BASE,Цена Earth-Flex,дефицит > 0,,True,False,0.9..2.16
+S1_new24,BASE,Цена Earth-New,план неисполним,,True,False,0.9..2.16
+S1_new24,BASE,Цена Earth-New,дефицит > 0,,True,False,0.9..2.16
+S1_new24,BASE,Фактическая поставка ISRU,план неисполним,,True,False,0..1
+S1_new24,BASE,Фактическая поставка ISRU,дефицит > 0,,True,False,0..1

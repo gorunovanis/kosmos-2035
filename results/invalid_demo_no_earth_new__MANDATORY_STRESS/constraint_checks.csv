@@ -1,0 +1,25 @@
+rule_id,scenario,period,status,actual,operator,limit,margin,unit,severity,cause
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2035,PASS,1.0,>=,0.97,0.03,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,MANDATORY_STRESS,2035,PASS,1.0,>=,0.99,0.01,share,reference,annual critical service below the resilience reference
+RESERVE_45D,MANDATORY_STRESS,2035-01-01,PASS,12.4,>=,12.328767,0.071233,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2036,PASS,1.0,>=,0.97,0.03,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,MANDATORY_STRESS,2036,PASS,1.0,>=,0.99,0.01,share,reference,annual critical service below the resilience reference
+RESERVE_45D,MANDATORY_STRESS,2036-01-01,PASS,39.415,>=,17.260274,22.154726,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2037,PASS,0.991832,>=,0.97,0.021832,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,MANDATORY_STRESS,2037,PASS,1.0,>=,0.99,0.01,share,reference,annual critical service below the resilience reference
+RESERVE_45D,MANDATORY_STRESS,2037-01-01,PASS,30.819,>=,23.424658,7.394342,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2038,FAIL,0.652939,>=,0.97,-0.317061,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,MANDATORY_STRESS,2038,FAIL,0.960205,>=,0.99,-0.029795,share,reference,annual critical service below the resilience reference
+RESERVE_45D,MANDATORY_STRESS,2038-01-01,FAIL,0.0,>=,35.445205,-35.445205,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+STRESS_LOSS_LIMIT,MANDATORY_STRESS,2038,PASS,0.012,<=,0.02,0.008,share,hard,annual losses / throughput above the stress ceiling; storage regime too lossy
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2039,FAIL,0.543995,>=,0.97,-0.426005,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,MANDATORY_STRESS,2039,FAIL,0.828945,>=,0.99,-0.161055,share,reference,annual critical service below the resilience reference
+RESERVE_45D,MANDATORY_STRESS,2039-01-01,FAIL,0.0,>=,45.369863,-45.369863,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+STRESS_LOSS_LIMIT,MANDATORY_STRESS,2039,PASS,0.012,<=,0.02,0.008,share,hard,annual losses / throughput above the stress ceiling; storage regime too lossy
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2040,FAIL,0.583188,>=,0.97,-0.386812,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,MANDATORY_STRESS,2040,FAIL,0.909774,>=,0.99,-0.080226,share,reference,annual critical service below the resilience reference
+RESERVE_45D,MANDATORY_STRESS,2040-01-01,FAIL,0.0,>=,55.294521,-55.294521,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+STRESS_LOSS_LIMIT,MANDATORY_STRESS,2040,PASS,0.012,<=,0.02,0.008,share,hard,annual losses / throughput above the stress ceiling; storage regime too lossy
+CAPEX_2037,MANDATORY_STRESS,through_2037,PASS,180.0,<=,1800.0,1620.0,mln,hard,cumulative CAPEX through end-2037 above limit
+CAPEX_2040,MANDATORY_STRESS,through_2040,PASS,180.0,<=,2800.0,2620.0,mln,hard,cumulative CAPEX through 2040 above limit
+EMERGENCY_BASE_STREAK,MANDATORY_STRESS,2035_2040,PASS,0,<=,2,2,years,hard,Emergency used as a base channel for more than two consecutive years (planned offtake or share above threshold)

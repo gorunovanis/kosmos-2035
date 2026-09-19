@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SpaceEconomyPolicy/test_oil/schemas/demand.schema.json",
+  "title": "DemandRow",
+  "type": "object",
+  "required": ["year", "base_total_t", "base_critical_t", "low_total_t", "high_total_t", "status"],
+  "properties": {
+    "year": {"type": "integer", "minimum": 2035},
+    "base_total_t": {"type": "number", "minimum": 0},
+    "base_critical_t": {"type": "number", "minimum": 0},
+    "low_total_t": {"type": "number", "minimum": 0},
+    "high_total_t": {"type": "number", "minimum": 0},
+    "status": {"const": "CASE_INPUT"}
+  },
+  "additionalProperties": false
+}

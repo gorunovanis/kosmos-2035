@@ -1,0 +1,22 @@
+rule_id,scenario,period,status,actual,operator,limit,margin,unit,severity,cause
+BASE_TOTAL_SERVICE,BASE,2035,FAIL,0.0,>=,0.97,-0.97,share,hard,annual total service below the case minimum
+BASE_CRITICAL_SERVICE,BASE,2035,FAIL,0.0,>=,0.99,-0.99,share,hard,annual critical service below the case minimum
+RESERVE_45D,BASE,2035-01-01,FAIL,0.0,>=,12.328767,-12.328767,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+BASE_TOTAL_SERVICE,BASE,2036,FAIL,0.0,>=,0.97,-0.97,share,hard,annual total service below the case minimum
+BASE_CRITICAL_SERVICE,BASE,2036,FAIL,0.0,>=,0.99,-0.99,share,hard,annual critical service below the case minimum
+RESERVE_45D,BASE,2036-01-01,FAIL,0.0,>=,17.260274,-17.260274,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+BASE_TOTAL_SERVICE,BASE,2037,FAIL,0.0,>=,0.97,-0.97,share,hard,annual total service below the case minimum
+BASE_CRITICAL_SERVICE,BASE,2037,FAIL,0.0,>=,0.99,-0.99,share,hard,annual critical service below the case minimum
+RESERVE_45D,BASE,2037-01-01,FAIL,0.0,>=,23.424658,-23.424658,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+BASE_TOTAL_SERVICE,BASE,2038,FAIL,0.0,>=,0.97,-0.97,share,hard,annual total service below the case minimum
+BASE_CRITICAL_SERVICE,BASE,2038,FAIL,0.0,>=,0.99,-0.99,share,hard,annual critical service below the case minimum
+RESERVE_45D,BASE,2038-01-01,FAIL,0.0,>=,30.821918,-30.821918,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+BASE_TOTAL_SERVICE,BASE,2039,FAIL,0.0,>=,0.97,-0.97,share,hard,annual total service below the case minimum
+BASE_CRITICAL_SERVICE,BASE,2039,FAIL,0.0,>=,0.99,-0.99,share,hard,annual critical service below the case minimum
+RESERVE_45D,BASE,2039-01-01,FAIL,0.0,>=,39.452055,-39.452055,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+BASE_TOTAL_SERVICE,BASE,2040,FAIL,0.0,>=,0.97,-0.97,share,hard,annual total service below the case minimum
+BASE_CRITICAL_SERVICE,BASE,2040,FAIL,0.0,>=,0.99,-0.99,share,hard,annual critical service below the case minimum
+RESERVE_45D,BASE,2040-01-01,FAIL,0.0,>=,48.082192,-48.082192,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+CAPEX_2037,BASE,through_2037,PASS,0.0,<=,1800.0,1800.0,mln,hard,cumulative CAPEX through end-2037 above limit
+CAPEX_2040,BASE,through_2040,PASS,0.0,<=,2800.0,2800.0,mln,hard,cumulative CAPEX through 2040 above limit
+EMERGENCY_BASE_STREAK,BASE,2035_2040,PASS,0,<=,2,2,years,hard,Emergency used as a base channel for more than two consecutive years (planned offtake or share above threshold)

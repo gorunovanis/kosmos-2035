@@ -1,0 +1,88 @@
+{
+  "scenario_id": "BASE",
+  "plan_id": "S1_new24_stress_prepared",
+  "feasible": false,
+  "units": {
+    "fuel": "t",
+    "money": "mln conditional units, constant 2035 prices",
+    "capacity": "t/year",
+    "rates": "mln per (t/year) per year",
+    "time": "365-day model years"
+  },
+  "years": [
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040
+  ],
+  "preparatory_year": 2034,
+  "assumptions_reference": "assumptions.csv / configs/assumptions.yaml",
+  "assumptions": {
+    "discount_rate": 0.07,
+    "discount_base_year": 2035,
+    "reserve_days": 45,
+    "preparatory_year_enabled": true,
+    "preparatory_costs_to_first_year": true,
+    "earth_channels_available_in_preparatory_year": true,
+    "order_lead_convention": "max",
+    "emergency_base_share_threshold": 0.1,
+    "storage_overflow_policy": "cap_and_flag",
+    "critical_first": true,
+    "isru_deliveries_from_commissioning": true
+  },
+  "scenario_changes": [],
+  "capex_events": [
+    {
+      "date": "2035-01-15",
+      "year": 2035,
+      "amount_mln": 90.0,
+      "label": "Earth-New option fee"
+    },
+    {
+      "date": "2035-07-01",
+      "year": 2035,
+      "amount_mln": 270.0,
+      "label": "Earth-New exercise"
+    },
+    {
+      "date": "2036-01-01",
+      "year": 2036,
+      "amount_mln": 180.0,
+      "label": "ZBO CAPEX"
+    }
+  ],
+  "commissioning": {
+    "ZBO": "2036-01-01",
+    "Earth-New": "2037-07-01",
+    "Lunar-ISRU": null
+  },
+  "horizon": {
+    "total_expense_mln": 12723.348759654247,
+    "discounted_expense_mln": 10360.03038814517,
+    "served_total_t": 1390.000000000006,
+    "served_critical_t": 950.0000000000022,
+    "demand_total_t": 1390.0,
+    "shortage_total_t": 0.0,
+    "shortage_critical_t": 0.0,
+    "delivered_t": 1600.4893932671578,
+    "losses_t": 23.594872719205867,
+    "procurement_mln": 10816.90599245748,
+    "reservation_mln": 916.6602739726027,
+    "holding_mln": 271.68288653980915,
+    "opex_mln": 60.0,
+    "capex_mln": 540.0,
+    "preparation_cost_mln": 118.09960668435774,
+    "cumulative_capex_mln": 540.0,
+    "closing_inventory_t": 118.93150684931507,
+    "cost_per_served_t_mln": 9.153488316297981,
+    "pv_per_served_t_mln": 7.453259272046853,
+    "SL_total_min": 0.999999999999997,
+    "SL_critical_min": 0.9999999999999941
+  },
+  "canonical_hash": "70217a597002d4463c0e88a843e9f42db7e6a7e2273e668a11245207b9aacf11",
+  "code_version": "v1.0-candidate-1-geaf0ab2-dirty",
+  "case_fingerprint": "23d95d888d681d3524c8ee35bf55a92979e57ed9f052753ef5442a4c560eb4d3",
+  "n_violations_hard": 2
+}

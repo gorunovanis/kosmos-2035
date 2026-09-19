@@ -1,0 +1,18 @@
+risk_id: R5
+event: Скачок спроса ×1,25 в 2038–2040 сверх базового (выше high)
+cause: ускорение программ критических и коммерческих потребителей
+affected_parameter: общий и критический спрос 2038–2040
+period: 2038–2040
+probability_basis: "high demand кейса даёт ×1,25 в 2038 и ×1,25 в 2039–2040; сценарий использует ту же величину как TEAM-риск"
+owner: оператор (прогноз), коммерческие потребители (заявки)
+dependencies: R1 (без Earth-New нечем покрыть); резервы мощности Flex и Emergency
+scenario_overlay:
+  demand_multiplier: {2038: 1.25, 2039: 1.25, 2040: 1.25}
+  critical_demand_multiplier: {2038: 1.25, 2039: 1.25, 2040: 1.25}
+mitigation:
+  text: реактивный дозаказ Flex после наблюдения роста (решение 01.01.2038, поставки с 03.05.2038) и полный Flex в 2039–2040; остаётся дефицит первых месяцев 2038 и ограничение мощности
+  plan_patch:
+    add_orders:
+      - {source_id: B, volume_t: 60.0, start: "2038-05-03", end: "2038-12-31", role: reactive, decided_on: "2038-01-01", cause: "R5 mitigation: Flex top-up after observing demand"}
+      - {source_id: B, volume_t: 97.0, year: 2039, role: reactive, decided_on: "2038-08-01", cause: "R5 mitigation"}
+      - {source_id: B, volume_t: 35.0, year: 2040, role: reactive, decided_on: "2039-08-01", cause: "R5 mitigation"}

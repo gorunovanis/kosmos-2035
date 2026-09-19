@@ -1,0 +1,4 @@
+rule_id,scenario,period,actual,limit,excess,unit,cause,severity
+STORAGE_OVERFLOW,MANDATORY_STRESS,2039,120.032877,120.0,1.634411,t,"physical stock plus arrivals exceeds active storage capacity; excess reported, not silently stored",hard
+STORAGE_OVERFLOW,MANDATORY_STRESS,2040,120.032877,120.0,0.032877,t,"physical stock plus arrivals exceeds active storage capacity; excess reported, not silently stored",hard
+EMERGENCY_BASE_STREAK,MANDATORY_STRESS,2035_2040,3,2,1,years,Emergency used as a base channel for more than two consecutive years (planned offtake or share above threshold),hard

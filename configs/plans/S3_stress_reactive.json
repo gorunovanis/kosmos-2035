@@ -1,0 +1,290 @@
+{
+  "plan_id": "S3_stress_reactive",
+  "scenario_id": "MANDATORY_STRESS",
+  "description": "S3: Core + Flex + ZBO + Earth-New (18 months) + Lunar-ISRU (CAPEX 1790) — reaction after observing the stress on 2038-01-01 (Flex +122 d, Emergency +42 d)",
+  "decisions": {
+    "capacity_reservations": [
+      {
+        "source_id": "B",
+        "year": 2034,
+        "reserved_t_per_year": 110.0,
+        "start": "2034-11-18",
+        "end": "2034-12-31"
+      },
+      {
+        "source_id": "A",
+        "year": 2035,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "A",
+        "year": 2036,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "A",
+        "year": 2037,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "A",
+        "year": 2038,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "A",
+        "year": 2039,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "A",
+        "year": 2040,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "B",
+        "year": 2035,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "B",
+        "year": 2036,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "B",
+        "year": 2037,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "B",
+        "year": 2038,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "B",
+        "year": 2039,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "B",
+        "year": 2040,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "C",
+        "year": 2037,
+        "reserved_t_per_year": 130
+      },
+      {
+        "source_id": "C",
+        "year": 2038,
+        "reserved_t_per_year": 130
+      },
+      {
+        "source_id": "C",
+        "year": 2039,
+        "reserved_t_per_year": 130
+      },
+      {
+        "source_id": "C",
+        "year": 2040,
+        "reserved_t_per_year": 130
+      },
+      {
+        "source_id": "E",
+        "year": 2035,
+        "reserved_t_per_year": 80
+      },
+      {
+        "source_id": "E",
+        "year": 2036,
+        "reserved_t_per_year": 80
+      },
+      {
+        "source_id": "E",
+        "year": 2037,
+        "reserved_t_per_year": 80
+      },
+      {
+        "source_id": "E",
+        "year": 2038,
+        "reserved_t_per_year": 80
+      },
+      {
+        "source_id": "E",
+        "year": 2039,
+        "reserved_t_per_year": 80
+      },
+      {
+        "source_id": "E",
+        "year": 2040,
+        "reserved_t_per_year": 80
+      }
+    ],
+    "supply_orders": [
+      {
+        "source_id": "B",
+        "volume_t": 12.984293193717278,
+        "start": "2034-11-18",
+        "end": "2034-12-31",
+        "role": "preparatory",
+        "decided_on": "2034-07-19",
+        "cause": "opening stock 12.4 t net for 2035-01-01; gross = net / (1 - 0.045)"
+      },
+      {
+        "source_id": "A",
+        "year": 2035,
+        "volume_t": 133.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2036,
+        "volume_t": 133.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2037,
+        "volume_t": 133.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "C",
+        "year": 2037,
+        "volume_t": 65.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2038,
+        "volume_t": 133.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "B",
+        "volume_t": 70.0820676889801,
+        "start": "2038-05-03",
+        "end": "2038-12-31",
+        "role": "reactive",
+        "decided_on": "2038-01-01",
+        "cause": "reaction to observed conditions on 2038-01-01; arrival after lead time"
+      },
+      {
+        "source_id": "C",
+        "year": 2038,
+        "volume_t": 65.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "D",
+        "year": 2038,
+        "volume_t": 58.08203926570909,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2039,
+        "volume_t": 147.62159613998114,
+        "role": "planned"
+      },
+      {
+        "source_id": "B",
+        "volume_t": 79.89323942099713,
+        "start": "2039-01-01",
+        "end": "2039-12-31",
+        "role": "reactive",
+        "decided_on": "2038-01-01",
+        "cause": "reaction to observed conditions on 2038-01-01; arrival after lead time"
+      },
+      {
+        "source_id": "C",
+        "year": 2039,
+        "volume_t": 65.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "D",
+        "year": 2039,
+        "volume_t": 120.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2040,
+        "volume_t": 190.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "B",
+        "volume_t": 59.21052631578936,
+        "start": "2040-01-01",
+        "end": "2040-12-31",
+        "role": "reactive",
+        "decided_on": "2038-01-01",
+        "cause": "reaction to observed conditions on 2038-01-01; arrival after lead time"
+      },
+      {
+        "source_id": "C",
+        "year": 2040,
+        "volume_t": 84.73684210526321,
+        "role": "planned"
+      },
+      {
+        "source_id": "D",
+        "year": 2040,
+        "volume_t": 120.0,
+        "role": "planned"
+      }
+    ],
+    "investments": [
+      {
+        "investment_id": "EARTH_NEW",
+        "option_fee_date": "2035-01-15",
+        "exercise_date": "2035-07-01",
+        "lead_months": 18,
+        "commissioning_date": "2037-01-01"
+      },
+      {
+        "investment_id": "LUNAR_ISRU",
+        "financing_date": "2037-06-01"
+      },
+      {
+        "investment_id": "ZBO",
+        "decision_date": "2036-01-01",
+        "lead_months": 0
+      }
+    ],
+    "inventory_policy": {
+      "reserve_days": 45.0,
+      "reserve_mode": "physical",
+      "end_year_targets_t": {
+        "2040": 55.294521,
+        "2039": 55.294521,
+        "2038": 45.369863,
+        "2037": 35.445205,
+        "2036": 23.424658,
+        "2035": 17.260274
+      }
+    },
+    "emergency_policy": {
+      "role": "insurance",
+      "planned_years": []
+    }
+  },
+  "meta": {
+    "strategy": "S3",
+    "planning_scenario": "MANDATORY_STRESS",
+    "builder": "kosmo.planner v1",
+    "targets_t": {
+      "2040": 55.294521,
+      "2039": 55.294521,
+      "2038": 45.369863,
+      "2037": 35.445205,
+      "2036": 23.424658,
+      "2035": 17.260274
+    },
+    "warnings": []
+  }
+}

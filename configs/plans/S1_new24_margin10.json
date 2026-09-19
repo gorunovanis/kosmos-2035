@@ -1,0 +1,254 @@
+{
+  "plan_id": "S1_new24_margin10",
+  "scenario_id": "BASE",
+  "description": "S1 (24 months) with a 10 % safety margin above the 45-day reserve",
+  "decisions": {
+    "capacity_reservations": [
+      {
+        "source_id": "B",
+        "year": 2034,
+        "reserved_t_per_year": 110.0,
+        "start": "2034-11-18",
+        "end": "2034-12-31"
+      },
+      {
+        "source_id": "A",
+        "year": 2035,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "A",
+        "year": 2036,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "A",
+        "year": 2037,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "A",
+        "year": 2038,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "A",
+        "year": 2039,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "A",
+        "year": 2040,
+        "reserved_t_per_year": 190
+      },
+      {
+        "source_id": "B",
+        "year": 2035,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "B",
+        "year": 2036,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "B",
+        "year": 2037,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "B",
+        "year": 2038,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "B",
+        "year": 2039,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "B",
+        "year": 2040,
+        "reserved_t_per_year": 110
+      },
+      {
+        "source_id": "C",
+        "year": 2037,
+        "reserved_t_per_year": 130
+      },
+      {
+        "source_id": "C",
+        "year": 2038,
+        "reserved_t_per_year": 130
+      },
+      {
+        "source_id": "C",
+        "year": 2039,
+        "reserved_t_per_year": 130
+      },
+      {
+        "source_id": "C",
+        "year": 2040,
+        "reserved_t_per_year": 130
+      },
+      {
+        "source_id": "E",
+        "year": 2035,
+        "reserved_t_per_year": 80
+      },
+      {
+        "source_id": "E",
+        "year": 2036,
+        "reserved_t_per_year": 80
+      },
+      {
+        "source_id": "E",
+        "year": 2037,
+        "reserved_t_per_year": 80
+      },
+      {
+        "source_id": "E",
+        "year": 2038,
+        "reserved_t_per_year": 80
+      },
+      {
+        "source_id": "E",
+        "year": 2039,
+        "reserved_t_per_year": 80
+      },
+      {
+        "source_id": "E",
+        "year": 2040,
+        "reserved_t_per_year": 80
+      }
+    ],
+    "supply_orders": [
+      {
+        "source_id": "B",
+        "volume_t": 12.984293193717278,
+        "start": "2034-11-18",
+        "end": "2034-12-31",
+        "role": "preparatory",
+        "decided_on": "2034-07-19",
+        "cause": "opening stock 12.4 t net for 2035-01-01; gross = net / (1 - 0.045)"
+      },
+      {
+        "source_id": "A",
+        "year": 2035,
+        "volume_t": 133.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2036,
+        "volume_t": 133.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2037,
+        "volume_t": 162.6631495757307,
+        "role": "planned"
+      },
+      {
+        "source_id": "C",
+        "volume_t": 32.76712328767123,
+        "start": "2037-07-01",
+        "end": "2037-12-31",
+        "role": "planned",
+        "cause": "partial year: delivery window limited by source availability"
+      },
+      {
+        "source_id": "A",
+        "year": 2038,
+        "volume_t": 190.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "C",
+        "year": 2038,
+        "volume_t": 72.64488935721812,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2039,
+        "volume_t": 190.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "B",
+        "year": 2039,
+        "volume_t": 13.495091786367912,
+        "role": "planned"
+      },
+      {
+        "source_id": "C",
+        "year": 2039,
+        "volume_t": 130.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2040,
+        "volume_t": 190.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "B",
+        "year": 2040,
+        "volume_t": 74.73684210526316,
+        "role": "planned"
+      },
+      {
+        "source_id": "C",
+        "year": 2040,
+        "volume_t": 130.0,
+        "role": "planned"
+      }
+    ],
+    "investments": [
+      {
+        "investment_id": "EARTH_NEW",
+        "option_fee_date": "2035-01-15",
+        "exercise_date": "2035-07-01",
+        "lead_months": 24
+      },
+      {
+        "investment_id": "ZBO",
+        "decision_date": "2036-01-01",
+        "lead_months": 0
+      }
+    ],
+    "inventory_policy": {
+      "reserve_days": 45.0,
+      "reserve_mode": "physical",
+      "end_year_targets_t": {
+        "2040": 52.890411,
+        "2039": 52.890411,
+        "2038": 43.39726,
+        "2037": 33.90411,
+        "2036": 25.767123,
+        "2035": 18.986301
+      }
+    },
+    "emergency_policy": {
+      "role": "insurance",
+      "planned_years": []
+    }
+  },
+  "meta": {
+    "strategy": "S1_new24_margin10",
+    "planning_scenario": "BASE",
+    "builder": "kosmo.planner v1",
+    "targets_t": {
+      "2040": 52.890411,
+      "2039": 52.890411,
+      "2038": 43.39726,
+      "2037": 33.90411,
+      "2036": 25.767123,
+      "2035": 18.986301
+    },
+    "warnings": []
+  }
+}

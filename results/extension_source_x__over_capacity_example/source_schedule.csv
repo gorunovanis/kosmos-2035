@@ -1,0 +1,2 @@
+year,source_id,source,reserved_t_per_year,contract_period_fraction,scheduled_t,delivered_t,top_minimum_t,paid_quantity_t,paid_unused_t,unit_price_mln_per_t,procurement_mln,reservation_rate_mln_per_t_year,reservation_mln
+2035,X,Source-X,12.0,1.0,0.0,0.0,0.0,0.0,0.0,5.0,0.0,0.2,2.4

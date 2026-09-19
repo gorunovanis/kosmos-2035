@@ -1,0 +1,32 @@
+[
+  {
+    "event_label": "Ограничение международного доступа к запусковым услугам",
+    "affected_sources": ["Earth-New"],
+    "component": "variable_price",
+    "start_year": 2038,
+    "end_year": 2039,
+    "component_share": 0.55,
+    "component_multiplier": 1.4,
+    "basis": "TEAM_ASSUMPTION: доля запуска и доставки в цене 40–70 %, удорожание составляющей 25–50 % → k = 1,10–1,35. Механизм остановки сотрудничества и поиска замены подтверждён историческим примером (ESA, приостановка ExoMars, 17.03.2022); величина будущего шока остаётся допущением."
+  },
+  {
+    "event_label": "Конфликт на маршрутах предпусковой логистики",
+    "affected_sources": ["Earth-Core", "Earth-Flex", "Emergency"],
+    "component": "variable_price",
+    "start_year": 2039,
+    "end_year": 2040,
+    "component_share": 0.035,
+    "component_multiplier": 2.5,
+    "basis": "TEAM_ASSUMPTION: доля логистики и страхования 2–5 %, удорожание составляющей ×2–3 → k = 1,02–1,10. Механизм удорожания маршрутов подтверждён UNCTAD (Red Sea crisis, 2024); космическую цену пример не калибрует."
+  },
+  {
+    "event_label": "Межгосударственная программа новых провайдеров и совместных закупок",
+    "affected_sources": ["Earth-Flex", "Earth-New"],
+    "component": "variable_price",
+    "start_year": 2038,
+    "end_year": 2040,
+    "component_share": 0.55,
+    "component_multiplier": 0.85,
+    "basis": "TEAM_ASSUMPTION: доля запуска 40–70 %, снижение составляющей на 10–20 % → k = 0,86–0,96. Расширение предложения — цель программ типа ESA European Launcher Challenge; размер скидки остаётся допущением."
+  }
+]

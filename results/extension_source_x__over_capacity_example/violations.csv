@@ -1,0 +1,20 @@
+rule_id,scenario,period,actual,limit,excess,unit,cause,severity
+CAPACITY_EXCEEDED,BASE,2035,12.0,10.0,2.0,t/year,reserved capacity of Source-X exceeds source capacity,hard
+RESERVE_45D,BASE,2035-01-01,0.0,12.328767,12.328767,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,BASE,2036-01-01,0.0,17.260274,17.260274,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,BASE,2037-01-01,0.0,23.424658,23.424658,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,BASE,2038-01-01,0.0,30.821918,30.821918,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,BASE,2039-01-01,0.0,39.452055,39.452055,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,BASE,2040-01-01,0.0,48.082192,48.082192,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+BASE_TOTAL_SERVICE,BASE,2035,0.0,0.97,0.97,share,annual total service below the case minimum,hard
+BASE_CRITICAL_SERVICE,BASE,2035,0.0,0.99,0.99,share,annual critical service below the case minimum,hard
+BASE_TOTAL_SERVICE,BASE,2036,0.0,0.97,0.97,share,annual total service below the case minimum,hard
+BASE_CRITICAL_SERVICE,BASE,2036,0.0,0.99,0.99,share,annual critical service below the case minimum,hard
+BASE_TOTAL_SERVICE,BASE,2037,0.0,0.97,0.97,share,annual total service below the case minimum,hard
+BASE_CRITICAL_SERVICE,BASE,2037,0.0,0.99,0.99,share,annual critical service below the case minimum,hard
+BASE_TOTAL_SERVICE,BASE,2038,0.0,0.97,0.97,share,annual total service below the case minimum,hard
+BASE_CRITICAL_SERVICE,BASE,2038,0.0,0.99,0.99,share,annual critical service below the case minimum,hard
+BASE_TOTAL_SERVICE,BASE,2039,0.0,0.97,0.97,share,annual total service below the case minimum,hard
+BASE_CRITICAL_SERVICE,BASE,2039,0.0,0.99,0.99,share,annual critical service below the case minimum,hard
+BASE_TOTAL_SERVICE,BASE,2040,0.0,0.97,0.97,share,annual total service below the case minimum,hard
+BASE_CRITICAL_SERVICE,BASE,2040,0.0,0.99,0.99,share,annual critical service below the case minimum,hard

@@ -1,0 +1,22 @@
+rule_id,scenario,period,status,actual,operator,limit,margin,unit,severity,cause
+TOTAL_SERVICE_REFERENCE,LOW_DEMAND,2035,PASS,1.0,>=,0.97,0.03,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,LOW_DEMAND,2035,PASS,1.0,>=,0.99,0.01,share,reference,annual critical service below the resilience reference
+RESERVE_45D,LOW_DEMAND,2035-01-01,PASS,12.4,>=,9.863014,2.536986,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+TOTAL_SERVICE_REFERENCE,LOW_DEMAND,2036,PASS,1.0,>=,0.97,0.03,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,LOW_DEMAND,2036,PASS,1.0,>=,0.99,0.01,share,reference,annual critical service below the resilience reference
+RESERVE_45D,LOW_DEMAND,2036-01-01,PASS,59.415,>=,13.808219,45.606781,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+TOTAL_SERVICE_REFERENCE,LOW_DEMAND,2037,PASS,1.0,>=,0.97,0.03,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,LOW_DEMAND,2037,PASS,1.0,>=,0.99,0.01,share,reference,annual critical service below the resilience reference
+RESERVE_45D,LOW_DEMAND,2037-01-01,PASS,78.819,>=,18.739726,60.079274,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+TOTAL_SERVICE_REFERENCE,LOW_DEMAND,2038,PASS,1.0,>=,0.97,0.03,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,LOW_DEMAND,2038,PASS,1.0,>=,0.99,0.01,share,reference,annual critical service below the resilience reference
+RESERVE_45D,LOW_DEMAND,2038-01-01,PASS,119.583562,>=,24.657534,94.926027,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+TOTAL_SERVICE_REFERENCE,LOW_DEMAND,2039,PASS,1.0,>=,0.97,0.03,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,LOW_DEMAND,2039,PASS,1.0,>=,0.99,0.01,share,reference,annual critical service below the resilience reference
+RESERVE_45D,LOW_DEMAND,2039-01-01,PASS,119.452055,>=,31.561644,87.890411,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+TOTAL_SERVICE_REFERENCE,LOW_DEMAND,2040,PASS,1.0,>=,0.97,0.03,share,reference,"annual total service below the resilience reference; shortage shown, no automatic recourse"
+CRITICAL_SERVICE_REFERENCE,LOW_DEMAND,2040,PASS,1.0,>=,0.99,0.01,share,reference,annual critical service below the resilience reference
+RESERVE_45D,LOW_DEMAND,2040-01-01,PASS,119.29863,>=,38.465753,80.832877,t,hard,physical stock on 1 January vs 45 days of current-scenario demand
+CAPEX_2037,LOW_DEMAND,through_2037,PASS,540.0,<=,1800.0,1260.0,mln,hard,cumulative CAPEX through end-2037 above limit
+CAPEX_2040,LOW_DEMAND,through_2040,PASS,540.0,<=,2800.0,2260.0,mln,hard,cumulative CAPEX through 2040 above limit
+EMERGENCY_BASE_STREAK,LOW_DEMAND,2035_2040,PASS,0,<=,2,2,years,hard,Emergency used as a base channel for more than two consecutive years (planned offtake or share above threshold)

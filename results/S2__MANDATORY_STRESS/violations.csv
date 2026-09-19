@@ -1,0 +1,7 @@
+rule_id,scenario,period,actual,limit,excess,unit,cause,severity
+RESERVE_45D,MANDATORY_STRESS,2038-01-01,30.821918,35.445205,4.623288,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,MANDATORY_STRESS,2039-01-01,0.0,45.369863,45.369863,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+RESERVE_45D,MANDATORY_STRESS,2040-01-01,0.0,55.294521,55.294521,t,opening physical stock below 45-day reserve of the current scenario; contracted capacity is not stock,hard
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2038,0.821218,0.97,0.148782,share,"annual total service below the resilience reference; shortage shown, no automatic recourse",reference
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2039,0.812473,0.97,0.157527,share,"annual total service below the resilience reference; shortage shown, no automatic recourse",reference
+TOTAL_SERVICE_REFERENCE,MANDATORY_STRESS,2040,0.869565,0.97,0.100435,share,"annual total service below the resilience reference; shortage shown, no automatic recourse",reference

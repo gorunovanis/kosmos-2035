@@ -1,0 +1,237 @@
+{
+  "plan_id": "S1_new18",
+  "scenario_id": "BASE",
+  "description": "S1: Earth-Core + Earth-Flex + ZBO (2036) + Earth-New option (bought 2035-01-15, exercised 2035-07-01, 18 months, operation from 2037-01-01). Physical 45-day reserve. Emergency reserved as insurance only. Same schedule replayed in BASE and MANDATORY_STRESS (stress without adaptation).",
+  "decisions": {
+    "capacity_reservations": [
+      {
+        "source_id": "B",
+        "year": 2034,
+        "reserved_t_per_year": 110.0,
+        "start": "2034-11-18",
+        "end": "2034-12-31"
+      },
+      {
+        "source_id": "A",
+        "year": 2035,
+        "reserved_t_per_year": 190.0
+      },
+      {
+        "source_id": "A",
+        "year": 2036,
+        "reserved_t_per_year": 190.0
+      },
+      {
+        "source_id": "A",
+        "year": 2037,
+        "reserved_t_per_year": 190.0
+      },
+      {
+        "source_id": "A",
+        "year": 2038,
+        "reserved_t_per_year": 190.0
+      },
+      {
+        "source_id": "A",
+        "year": 2039,
+        "reserved_t_per_year": 190.0
+      },
+      {
+        "source_id": "A",
+        "year": 2040,
+        "reserved_t_per_year": 190.0
+      },
+      {
+        "source_id": "B",
+        "year": 2035,
+        "reserved_t_per_year": 110.0
+      },
+      {
+        "source_id": "B",
+        "year": 2036,
+        "reserved_t_per_year": 110.0
+      },
+      {
+        "source_id": "B",
+        "year": 2037,
+        "reserved_t_per_year": 110.0
+      },
+      {
+        "source_id": "B",
+        "year": 2038,
+        "reserved_t_per_year": 110.0
+      },
+      {
+        "source_id": "B",
+        "year": 2039,
+        "reserved_t_per_year": 110.0
+      },
+      {
+        "source_id": "B",
+        "year": 2040,
+        "reserved_t_per_year": 110.0
+      },
+      {
+        "source_id": "C",
+        "year": 2037,
+        "reserved_t_per_year": 130.0
+      },
+      {
+        "source_id": "C",
+        "year": 2038,
+        "reserved_t_per_year": 130.0
+      },
+      {
+        "source_id": "C",
+        "year": 2039,
+        "reserved_t_per_year": 130.0
+      },
+      {
+        "source_id": "C",
+        "year": 2040,
+        "reserved_t_per_year": 130.0
+      },
+      {
+        "source_id": "E",
+        "year": 2035,
+        "reserved_t_per_year": 80.0
+      },
+      {
+        "source_id": "E",
+        "year": 2036,
+        "reserved_t_per_year": 80.0
+      },
+      {
+        "source_id": "E",
+        "year": 2037,
+        "reserved_t_per_year": 80.0
+      },
+      {
+        "source_id": "E",
+        "year": 2038,
+        "reserved_t_per_year": 80.0
+      },
+      {
+        "source_id": "E",
+        "year": 2039,
+        "reserved_t_per_year": 80.0
+      },
+      {
+        "source_id": "E",
+        "year": 2040,
+        "reserved_t_per_year": 80.0
+      }
+    ],
+    "supply_orders": [
+      {
+        "source_id": "B",
+        "volume_t": 12.984293193717278,
+        "start": "2034-11-18",
+        "end": "2034-12-31",
+        "role": "preparatory",
+        "decided_on": "2034-07-19",
+        "cause": "opening stock 12.4 t net for 2035-01-01 (45 days of 2035 demand); gross = 12.4 / 0.955"
+      },
+      {
+        "source_id": "A",
+        "year": 2035,
+        "volume_t": 133.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2036,
+        "volume_t": 133.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2037,
+        "volume_t": 133.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "C",
+        "year": 2037,
+        "volume_t": 65.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2038,
+        "volume_t": 190.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "C",
+        "year": 2038,
+        "volume_t": 66.08203926570911,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2039,
+        "volume_t": 190.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "B",
+        "year": 2039,
+        "volume_t": 12.62159613998108,
+        "role": "planned"
+      },
+      {
+        "source_id": "C",
+        "year": 2039,
+        "volume_t": 130.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "A",
+        "year": 2040,
+        "volume_t": 190.0,
+        "role": "planned"
+      },
+      {
+        "source_id": "B",
+        "year": 2040,
+        "volume_t": 74.73684210526318,
+        "role": "planned"
+      },
+      {
+        "source_id": "C",
+        "year": 2040,
+        "volume_t": 130.0,
+        "role": "planned"
+      }
+    ],
+    "investments": [
+      {
+        "investment_id": "EARTH_NEW",
+        "option_fee_date": "2035-01-15",
+        "exercise_date": "2035-07-01",
+        "lead_months": 18.0,
+        "commissioning_date": "2037-01-01"
+      },
+      {
+        "investment_id": "ZBO",
+        "decision_date": "2036-01-01",
+        "lead_months": 0.0
+      }
+    ],
+    "inventory_policy": {
+      "reserve_days": 45,
+      "reserve_mode": "physical",
+      "end_year_target": "next-year 45-day reserve"
+    },
+    "emergency_policy": {
+      "role": "insurance",
+      "planned_years": []
+    }
+  },
+  "meta": {
+    "strategy": "S1",
+    "author": "team",
+    "independent_control": "Astra s1_reference.py BASE_FIXED (2026-09-19)"
+  }
+}

@@ -1,0 +1,15 @@
+risk_id: R6
+event: Низкий спрос ×0,8 во все годы при действующих take-or-pay
+cause: перенос миссий; оплаченные минимумы Core 70 % и Earth-New 50 % не возвращаются
+affected_parameter: общий и критический спрос ×0,8; оплаченный неиспользованный объём; переполнение хранилища при неизменных заказах
+period: 2035–2040
+probability_basis: "low demand кейса = ×0,8 (data/demand.csv)"
+owner: оператор (контракты), поставщики (получают take-or-pay)
+dependencies: ёмкость хранилища; правила пересмотра резервов (карточки договоров)
+scenario_overlay:
+  demand_multiplier: {default: 0.8}
+  critical_demand_multiplier: {default: 0.8}
+mitigation:
+  text: перепланирование отбора под наблюдаемый спрос теми же контрактами (минимумы take-or-pay остаются, Flex не заказывается); уведомления укладываются в lead time, так как решения о годовых объёмах принимаются заранее
+  plan_patch:
+    replan_with_planner: true

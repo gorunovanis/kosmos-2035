@@ -1,0 +1,2 @@
+rule_id,scenario,period,actual,limit,excess,unit,cause,severity
+EMERGENCY_BASE_STREAK,MANDATORY_STRESS,2035_2040,3,2,1,years,Emergency used as a base channel for more than two consecutive years (planned offtake or share above threshold),hard

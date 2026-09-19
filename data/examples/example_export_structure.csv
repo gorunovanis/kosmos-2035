@@ -1,0 +1,4 @@
+scenario_id,plan_id,year,metric,value,unit
+SYNTHETIC,example,2035,total_demand,10,t
+SYNTHETIC,example,2035,served_demand,9,t
+SYNTHETIC,example,2035,shortage,1,t

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SpaceEconomyPolicy/test_oil/schemas/scenario.schema.json",
+  "title": "Scenario",
+  "type": "object",
+  "required": ["scenario_id", "status"],
+  "properties": {
+    "scenario_id": {"type": "string", "minLength": 1},
+    "label_ru": {"type": "string"},
+    "status": {"enum": ["CASE_INPUT", "TEAM_ASSUMPTION"]},
+    "demand_multiplier": {"type": "object"},
+    "critical_demand_multiplier": {"type": "object"},
+    "variable_price_multiplier": {"type": "object"},
+    "actual_delivery_share": {"type": "object"},
+    "loss_ceiling": {"type": "object"},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

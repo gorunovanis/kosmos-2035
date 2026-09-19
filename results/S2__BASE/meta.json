@@ -1,0 +1,82 @@
+{
+  "scenario_id": "BASE",
+  "plan_id": "S2",
+  "feasible": true,
+  "units": {
+    "fuel": "t",
+    "money": "mln conditional units, constant 2035 prices",
+    "capacity": "t/year",
+    "rates": "mln per (t/year) per year",
+    "time": "365-day model years"
+  },
+  "years": [
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040
+  ],
+  "preparatory_year": 2034,
+  "assumptions_reference": "assumptions.csv / configs/assumptions.yaml",
+  "assumptions": {
+    "discount_rate": 0.07,
+    "discount_base_year": 2035,
+    "reserve_days": 45,
+    "preparatory_year_enabled": true,
+    "preparatory_costs_to_first_year": true,
+    "earth_channels_available_in_preparatory_year": true,
+    "order_lead_convention": "max",
+    "emergency_base_share_threshold": 0.1,
+    "storage_overflow_policy": "cap_and_flag",
+    "critical_first": true,
+    "isru_deliveries_from_commissioning": true
+  },
+  "scenario_changes": [],
+  "capex_events": [
+    {
+      "date": "2037-06-01",
+      "year": 2037,
+      "amount_mln": 1250.0,
+      "label": "Lunar-ISRU CAPEX"
+    },
+    {
+      "date": "2036-01-01",
+      "year": 2036,
+      "amount_mln": 180.0,
+      "label": "ZBO CAPEX"
+    }
+  ],
+  "commissioning": {
+    "ZBO": "2036-01-01",
+    "Earth-New": null,
+    "Lunar-ISRU": "2038-01-01"
+  },
+  "horizon": {
+    "total_expense_mln": 10875.30175320864,
+    "discounted_expense_mln": 8997.694418715912,
+    "served_total_t": 1390.000000000006,
+    "served_critical_t": 950.0000000000022,
+    "demand_total_t": 1390.0,
+    "shortage_total_t": 0.0,
+    "shortage_critical_t": 0.0,
+    "delivered_t": 1447.4404775109556,
+    "losses_t": 21.758285730131433,
+    "procurement_mln": 8118.237486828277,
+    "reservation_mln": 780.0,
+    "holding_mln": 158.9646596960053,
+    "opex_mln": 270.0,
+    "capex_mln": 1430.0,
+    "preparation_cost_mln": 118.09960668435774,
+    "cumulative_capex_mln": 1430.0,
+    "closing_inventory_t": 48.08219178082118,
+    "cost_per_served_t_mln": 7.823958095833521,
+    "pv_per_served_t_mln": 6.473161452313578,
+    "SL_total_min": 0.999999999999997,
+    "SL_critical_min": 0.9999999999999941
+  },
+  "canonical_hash": "215700148ded9bbaf6146267d8a1abea36d9b488a0c081fa8f65629627d2f1af",
+  "code_version": "v1.0-candidate-1-geaf0ab2-dirty",
+  "case_fingerprint": "23d95d888d681d3524c8ee35bf55a92979e57ed9f052753ef5442a4c560eb4d3",
+  "n_violations_hard": 0
+}

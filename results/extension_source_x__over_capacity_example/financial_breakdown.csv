@@ -1,0 +1,7 @@
+year,procurement_mln,reservation_mln,holding_mln,opex_zbo_mln,opex_isru_mln,capex_mln,preparation_cost_mln,total_expense_mln,discount_factor,discounted_expense_mln,cost_per_served_t_mln,pv_per_served_t_mln
+2035,0.0,2.4,0.0,0.0,0.0,0.0,0.0,2.4,1.0,2.4,,
+2036,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.934579,0.0,,
+2037,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.873439,0.0,,
+2038,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.816298,0.0,,
+2039,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.762895,0.0,,
+2040,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.712986,0.0,,

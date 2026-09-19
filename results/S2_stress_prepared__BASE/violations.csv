@@ -1,0 +1,4 @@
+rule_id,scenario,period,actual,limit,excess,unit,cause,severity
+STORAGE_OVERFLOW,BASE,2038,120.360272,120.0,44.606715,t,"physical stock plus arrivals exceeds active storage capacity; excess reported, not silently stored",hard
+STORAGE_OVERFLOW,BASE,2039,120.465753,120.0,100.191781,t,"physical stock plus arrivals exceeds active storage capacity; excess reported, not silently stored",hard
+STORAGE_OVERFLOW,BASE,2040,120.273973,120.0,30.191781,t,"physical stock plus arrivals exceeds active storage capacity; excess reported, not silently stored",hard

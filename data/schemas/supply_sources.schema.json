@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SpaceEconomyPolicy/test_oil/schemas/supply_sources.schema.json",
+  "title": "SupplySourceRow",
+  "type": "object",
+  "required": ["source_id", "name", "capacity_t_per_year", "variable_cost_mln_per_t", "reservation_rate_mln_per_t_year_capacity", "take_or_pay_share", "lead_time_min_value", "lead_time_max_value", "lead_time_unit", "reliability_profile", "status", "notes"],
+  "properties": {
+    "source_id": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "capacity_t_per_year": {"type": "number", "minimum": 0},
+    "variable_cost_mln_per_t": {"type": "number", "minimum": 0},
+    "reservation_rate_mln_per_t_year_capacity": {"type": "number", "minimum": 0},
+    "take_or_pay_share": {"type": "number", "minimum": 0, "maximum": 1},
+    "lead_time_min_value": {"type": "number", "minimum": 0},
+    "lead_time_max_value": {"type": "number", "minimum": 0},
+    "lead_time_unit": {"enum": ["day", "week", "month", "year"]},
+    "reliability_profile": {"type": "string", "minLength": 1},
+    "available_from_year": {"type": ["integer", "null"], "minimum": 2035},
+    "status": {"const": "CASE_INPUT"},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}
